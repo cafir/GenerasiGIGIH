@@ -18,9 +18,9 @@ class Villian < Person
 
     def take_damage(damage)
         @hitpoint -= damage
-        if @hitpoint <= 50
+        if @hitpoint <= 50 && @hitpoint > 0
             flee if rand < @run_rate
-        end 
+        end
     end
 
     
